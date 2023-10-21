@@ -146,7 +146,7 @@ const{password}=formData
       />
       <Text style={styles.message}>{message}</Text>
 <Text  style={styles.registerLable}>
-    Please do Register before tring to Login
+    Please do Register before trying to Login
 </Text>
 
       {/* Add button for New User Registration */}
