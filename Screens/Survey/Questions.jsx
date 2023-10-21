@@ -301,7 +301,7 @@ const playAudio = async (audioUrl) => {
                  
                  {isPlaying && (
   <Image
-    source={{ uri: 'https://media.tenor.com/NjavXXAMRD8AAAAC/sound.gif' }}
+    source={{ uri: 'https://res.cloudinary.com/dyylqn8vb/image/upload/v1697877854/sound_y7do8w.gif' }}
     style={{ height: 30, width: 80, }} // Use numeric values without 'px'
   />
 )}
