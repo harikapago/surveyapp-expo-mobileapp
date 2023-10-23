@@ -117,7 +117,7 @@ function Welcome({ route, navigation }) {
       color="white"
       backgroundColor='rgb(255, 200, 0)'
       borderColor="white"
-      onPress={() => navigation.navigate("Question", { selectedLanguage,agentId })}
+      onPress={() => navigation.navigate("Survey", { selectedLanguage,agentId })}
       />
       <View style={styles.buttonLine}></View>
     </View>

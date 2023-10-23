@@ -110,13 +110,13 @@ const [otp, setOTP] = useState(['', '', '', '', '']);
       if (enteredOTP === generatedOTP) {
         // Compare with the stored OTP
 
-        setMessage('OTP matches. Navigating to the welcome screen...');
+        setMessage('OTP matches. Navigating to the Register screen...');
         // navigation.navigate('Welcome',{email});
         setOTP("")
         setGeneratedOTP("SecuRinG")
         Alert.alert(
           "Success",
-          "OTP matches. Navigating to the welcome screen...",
+          "OTP matches. Navigating to the Register screen...",
           [
             {
               text: "OK",

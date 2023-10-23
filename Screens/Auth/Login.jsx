@@ -48,7 +48,7 @@ const{password}=formData
       .catch((err) => {
         console.error("Error: ", err);
       });
-  }, []);
+  }, [formData.password]);
 
   const validateEmail = (email) => {
     // Simple email validation using a regular expression
@@ -56,13 +56,7 @@ const{password}=formData
   };
 
   const verifyAgent = () => {
-    // if (!validateEmail(email)) {
-    //   Alert.alert("Error", "Invalid email format. Please enter a valid email address.");
-    //   return;
-    // }
-
-    // Replace the following logic with your agent verification logic.
-    // You can make a network request to verify the agent's credentials.
+   
 
     fetch("https://express-mongodb-survey-postapi.azurewebsites.net/login", {
       method: "POST",
@@ -103,6 +97,9 @@ const{password}=formData
 
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
+     <Text style={{fontSize:25,color:"#0562b3",fontWeight:"bold"}} >Citizen-Voice 
+     </Text>
+     <Text style={{fontSize:14,fontWeight:"bold",marginBottom:20}}>Making a Difference</Text>
       <Image
         source={require("../../assets/screens/login.png")}
         //    source={{ uri: 'https://cdni.iconscout.com/illustration/premium/thumb/login-page-2578971-2147152.png?f=webp' }} // Replace with your image URI
@@ -152,7 +149,10 @@ const{password}=formData
       {/* Add button for New User Registration */}
       <Button
         title="New User Registration"
-        onPress={() => navigation.navigate("SignIn")}
+        onPress={() => {
+          setFormData({ email: "", password: "" }); // Clear form data
+          navigation.navigate("SignIn");
+        }}
       />
 
     </KeyboardAvoidingView>
@@ -170,6 +170,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 0.06 * screenWidth,
+    color:"#0562b3",
     fontWeight: "bold",
     marginBottom: 0.01 * screenHeight,
     marginTop: 0.01 * screenHeight,

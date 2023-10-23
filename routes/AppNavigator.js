@@ -21,7 +21,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="Welcome" component={Welcome} />
-        <Stack.Screen name="Question" component={Questions} />
+        <Stack.Screen name="Survey" component={Questions} />
         <Stack.Screen name="ThankYou" component={Thank} />
       </Stack.Navigator>
       <Footer />

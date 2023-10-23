@@ -25,6 +25,7 @@ function IconButton({ onPress, name, color, title, backgroundColor, borderColor,
 
 const styles = StyleSheet.create({
   container: {
+    display:"flex",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -34,9 +35,10 @@ const styles = StyleSheet.create({
     borderColor: "white",
     // borderColor: "#000",
     marginBottom: 10,
-   
+   height:50,
   },
   iconContainer: {
+    height:30,
     marginLeft: 10, // Add margin to create space between text and icon
   },
   title: {
